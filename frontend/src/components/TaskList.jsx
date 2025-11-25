@@ -2,7 +2,11 @@ import TaskItem from './TaskItem';
 
 function TaskList({ tasks, activeTask, onSelectTask, onToggleComplete, onDeleteTask }) {
   if (tasks.length === 0) {
-    return <div className="empty-state"><p>No tasks yet. Add one above!</p></div>;
+    return (
+      <div className="empty-state">
+        <p>No tasks yet. Add one above to get started!</p>
+      </div>
+    );
   }
 
   return (
@@ -20,4 +24,5 @@ function TaskList({ tasks, activeTask, onSelectTask, onToggleComplete, onDeleteT
     </div>
   );
 }
+
 export default TaskList;
