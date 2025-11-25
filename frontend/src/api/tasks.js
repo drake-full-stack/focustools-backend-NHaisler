@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001';
+const API_URL = 'http://localhost:3001/api';
 
 export const getTasks = async () => {
   const response = await fetch(`${API_URL}/tasks`);
