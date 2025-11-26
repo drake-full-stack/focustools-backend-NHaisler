@@ -15,7 +15,7 @@ function TaskItem({ task, isActive, onSelect, onToggleComplete, onDelete }) {
         <div className="task-meta">
           {task.pomodoroCount > 0 && (
             <span className="pomodoro-badge">
-              🍅 × {task.pomodoroCount}
+              🍅 x {task.pomodoroCount}
             </span>
           )}
         </div>

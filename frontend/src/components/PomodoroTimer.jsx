@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 
 function PomodoroTimer({ onComplete }) {
-  const WORK_TIME = 25 * 60; // 25 minutes in seconds
-  const BREAK_TIME = 5 * 60;  // 5 minutes in seconds
+//   const WORK_TIME = 25 * 60; // 25 minutes in seconds
+//   const BREAK_TIME = 5 * 60;  // 5 minutes in seconds
+  const WORK_TIME  = 3;
+  const BREAK_TIME = 3;
 
   const [timeLeft, setTimeLeft] = useState(WORK_TIME);
   const [isRunning, setIsRunning] = useState(false);
