@@ -5,10 +5,14 @@ const mongoose = require("mongoose");
 const app = express();
 const PORT = process.env.PORT || 3001;
 const cors = require('cors');
-app.use(cors());
 
 // Middleware
-app.use(express.json());
+app.use(
+  cors({
+    origin: process.env.CLIENT_ORIGIN,
+    credentials: true,
+  })
+);
 
 // MongoDB Connection
 mongoose
